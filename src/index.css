@@ -33,7 +33,7 @@
 
 
 body {
-  background-image: repeating-radial-gradient(rgba(13, 224, 126, 0.616), rgb(238, 13, 208)),
+  background-image: repeating-radial-gradient(rgba(102, 126, 231, 0.377), rgba(17, 7, 78, 0.459)),
     url('./components/img/COCKTEIL.jpg'),
     url('https://cdn.pixabay.com/photo/2019/11/08/18/04/cognac-4611998_1280.jpg');
   background-attachment: fixed;
@@ -66,8 +66,8 @@ h1 {
 
 .category {
   font-size: 20px;
-  color: rgb(8, 247, 247);
-  margin-top: 10px;
+  color: rgb(242, 248, 248);
+  margin-top: 25px;
   margin-bottom: 10px;
   text-align: center;
   font-family: 'Anton', sans-serif;
@@ -82,13 +82,13 @@ h1 {
 }
 
 .button {
-  margin-top: 10px;
   margin-left: 10px;
 }
 
 .fw-bolder {
+  font-family: sans-serif;
   margin-top: 15px;
-  color: rgb(6, 10, 245);
+  color: rgb(214, 250, 222);
   width: 100%;
   height: 15px;
   border-bottom: 15px;
