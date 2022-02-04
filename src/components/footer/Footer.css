@@ -17,9 +17,17 @@ a {
 }
 
 .footer-distributed {
-  background-color: #24376e73;
+  background: linear-gradient(to right, rgb(2, 2, 12), rgba(70, 115, 173, 0.514));
+  box-shadow: 0 1px 1px 0 rgba(172, 15, 15, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: center;
-  padding: 15px 15px;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #d2d2d3;
+  font-size: 14px;
+  margin: 0;
 }
