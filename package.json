@@ -12,19 +12,19 @@
     "@vitejs/plugin-react": "^1.0.7",
     "vite": "^2.7.2"
   },
-  "name": "e-commer",
-  "description": "",
+  "name": "e-commerce",
+  "description": "```sh\r $ npm install\r ```",
   "version": "1.0.0",
   "main": "vite.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcelovasan/e-commer.git"
+    "url": "git+https://github.com/marcelovasan/e-commerce.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marcelovasan/e-commer/issues"
+    "url": "https://github.com/marcelovasan/e-commerce/issues"
   },
-  "homepage": "https://github.com/marcelovasan/e-commer#readme"
+  "homepage": "https://github.com/marcelovasan/e-commerce#readme"
 }
