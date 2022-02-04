@@ -84,25 +84,14 @@ function App() {
           </span>
           <p>Total({subTotal})</p>
           <button type="button" class="btn btn-info" id='cartbutton' onClick={() => cart.map(e =>
-            <><a>
-              <div input-group mb-3>
-                <div className="btn btn-outline-secondary dropdown-toggle">
-                  <img src={e.strDrinkThumb} alt="drink" />
-                </div>
-                <div className="resultName">
-                  <p>{e.strDrink}</p>
-                </div>
+            <div input-group mb-3>
+              <div className="">
+                <img src={e.strDrinkThumb} alt="drink" />
               </div>
-            </a>
-              <div className="card-text">
-                <div key={e.idDrink} />
-                <img src={e.strDrinkThumb} alt={e.strDrinkThumb} className="img-thumbnail" />
-                <p className='fw-bold fs-2'>{e.strDrink}</p>
-                <p className='fw-bolder'>Precio S/.{e.price}</p>
-                {cart.find(i => i.idDrink === e.idDrink) ?
-                  <button id='remove' className="btn btn-danger" onClick={() => removeFromCart(e)}>Eliminar</button> :
-                  <button id='add' className="btn btn-success" onClick={() => addToCart(e)}>Agregar al carrito</button>}
-              </div></>
+              <div className="resultName">
+                <p>{e.strDrink}</p>
+              </div>
+            </div>
           )}>Listas carrito</button>
 
         </div>
