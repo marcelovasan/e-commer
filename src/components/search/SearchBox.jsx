@@ -39,11 +39,13 @@ const SearchBox = ({ placeholder }) => {
                 <div className="dataResult">
                     {data?.map((e, i) =>
                         <a href={`/search?s=${e.idDrink}`} className="dataItem" key={i}>
-                            <div className="resultImg">
-                                <img src={e.strDrinkThumb} alt="drink" />
-                            </div>
-                            <div className="resultName">
-                                <p>{e.strDrink}</p>
+                            <div>
+                                <div className="resultImg">
+                                    <img src={e.strDrinkThumb} alt="drink" />
+                                </div>
+                                <div className="resultName">
+                                    <p>{e.strDrink}</p>
+                                </div>
                             </div>
                         </a>
                     )}

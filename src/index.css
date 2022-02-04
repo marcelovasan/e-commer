@@ -4,37 +4,42 @@
   box-sizing: border-box;
 }
 
+.App-header {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(149, 236, 185));
+  margin-bottom: 10px;
+}
+
 .card {
-  background-color: rgb(3, 3, 97);
+  background-color: rgb(112, 112, 221);
   color: aliceblue;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  font-size: 25px;
-  width: 8%;
-  height: 100px;
-  text-align: right
-    /*filter: brightness(1.1); cuando no reconce al png
+  font-size: 15px;
+  margin-top: 10px;
+  width: 10%;
+  text-align: center;
+  /*filter: brightness(1.1); cuando no reconce al png
   mix-blend-mode: multiply;*/
+  float: right;
+}
+
+#cartbutton {
+  align-items: center;
+  text-align: center;
 }
 
 
 
 body {
-  background-image: repeating-radial-gradient(rgba(13, 224, 126, 0.616), rgb(238, 13, 208)), url('https://cdn.pixabay.com/photo/2019/11/08/18/04/cognac-4611998_1280.jpg'),
-    url('https://live.staticflickr.com/7025/6395175675_ee7919503d_c.jpg');
+  background-image: repeating-radial-gradient(rgba(13, 224, 126, 0.616), rgb(238, 13, 208)),
+    url('./components/img/COCKTEIL.jpg'),
+    url('https://cdn.pixabay.com/photo/2019/11/08/18/04/cognac-4611998_1280.jpg');
   background-attachment: fixed;
   overflow: scroll;
   /* filter: blur(1px);
   -webkit-filter: blur(8px); */
-}
-
-.App-header {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(149, 236, 185));
-  margin-bottom: 10px;
-  z-index: 1;
 }
 
 h1 {
@@ -50,7 +55,6 @@ h1 {
   margin-bottom: 10px;
   margin-left: 40px;
   width: 80%;
-  position: absolute;
 }
 
 .container {

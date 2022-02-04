@@ -76,18 +76,35 @@ function App() {
         style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h1>COCKTAIL APP</h1>
         <SearchBox placeholder="Enter a drink" />
+
         <div className='card'>
           <span className='item'>
-
-            {
-              /* {cart.map(e =>
-                <div>{e.strDrink}</div>
-              )} */
-            }
             {cart.length}
             Items
           </span>
           <p>Total({subTotal})</p>
+          <button type="button" class="btn btn-info" id='cartbutton' onClick={() => cart.map(e =>
+            <><a>
+              <div input-group mb-3>
+                <div className="btn btn-outline-secondary dropdown-toggle">
+                  <img src={e.strDrinkThumb} alt="drink" />
+                </div>
+                <div className="resultName">
+                  <p>{e.strDrink}</p>
+                </div>
+              </div>
+            </a>
+              <div className="card-text">
+                <div key={e.idDrink} />
+                <img src={e.strDrinkThumb} alt={e.strDrinkThumb} className="img-thumbnail" />
+                <p className='fw-bold fs-2'>{e.strDrink}</p>
+                <p className='fw-bolder'>Precio S/.{e.price}</p>
+                {cart.find(i => i.idDrink === e.idDrink) ?
+                  <button id='remove' className="btn btn-danger" onClick={() => removeFromCart(e)}>Eliminar</button> :
+                  <button id='add' className="btn btn-success" onClick={() => addToCart(e)}>Agregar al carrito</button>}
+              </div></>
+          )}>Listas carrito</button>
+
         </div>
       </header>
       <div className="container">
@@ -103,8 +120,8 @@ function App() {
                   <p className='fw-bold fs-2'>{e.strDrink}</p>
                   <p className='fw-bolder'>Precio S/. {e.price}</p>
                   {cart.find(i => i.idDrink === e.idDrink) ?
-                    <button id='remove' className="btn btn-danger" onClick={() => removeFromCart(e)}>remove</button> :
-                    <button id='add' className="btn btn-success" onClick={() => addToCart(e)}>Add to cart</button>
+                    <button id='remove' className="btn btn-danger" onClick={() => removeFromCart(e)}>Eliminar</button> :
+                    <button id='add' className="btn btn-success" onClick={() => addToCart(e)}>Agregar al carrito</button>
                   }
                 </div>
               )}
