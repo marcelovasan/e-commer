@@ -90,6 +90,7 @@ function App() {
               </div>
               <div className="resultName">
                 <p>{e.strDrink}</p>
+                <p className='fw-bolder'>Precio S/. {e.price}</p>
               </div>
             </div>
           )}>Listas carrito</button>
